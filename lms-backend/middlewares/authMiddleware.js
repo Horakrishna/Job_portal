@@ -20,7 +20,7 @@ const authMiddleware =asynchandler(async (req, res, next) =>{
     }else{
         throw new Error("There is no token attached to the header...");
     }
-});
+}); 
 
 const isAdmin =asynchandler(async( req, res, next)=>{
     const { email } =req.user;
